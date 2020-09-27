@@ -1,0 +1,28 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_header %}
+    <div class="chp-desktop-wrapper" 
+        style="background-color: {{page.header.extensions['CHP'].get('backgroundColor')}};
+            font-size: {{page.header.extensions['CHP'].get('fontSize')}}px;
+            color: {{page.header.extensions['CHP'].get('textColor')}}"
+        >
+        <div class="container">
+            <div class ="chp-item">
+                {{page.header.extensions['CHP'].get('firstItem')}}
+            </div>
+            <div class ="chp-item">
+                {{page.header.extensions['CHP'].get('secondItem')}}
+            </div>
+            <div class ="chp-item">
+                {{page.header.extensions['CHP'].get('thirdItem')}}
+            </div>
+            <div class ="chp-item">
+                {{page.header.extensions['CHP'].get('fourthItem')}}
+            </div>
+            <div class ="chp-item">
+                {{page.header.extensions['CHP'].get('fifthItem')}}
+            </div>
+        </div>
+    </div>
+    {{ parent() }}
+{% endblock %}

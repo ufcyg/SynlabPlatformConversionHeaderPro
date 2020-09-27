@@ -1,0 +1,25 @@
+{
+    "name": "synlab/platform-conversion-header-pro",
+    "description": "Conversion Header Pro for shopware 6",
+    "version": "v1.0.0",
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "SYNLAB A&S Germany"
+        }
+    ],
+    "type": "shopware-platform-plugin",
+    "autoload": {
+        "psr-4": {
+            "Synlab\\PlatformConversionHeaderPro\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Synlab\\PlatformConversionHeaderPro\\PlatformConversionHeaderPro",
+        "copyright": "(c) by SYNLAB A&S Germany",
+        "label": {
+            "de-DE": "Conversion Header Pro",
+            "en-GB": "Conversion Header Pro"
+        }
+    }
+}

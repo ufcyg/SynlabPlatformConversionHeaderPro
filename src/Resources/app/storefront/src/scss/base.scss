@@ -1,0 +1,16 @@
+.chp-desktop-wrapper{
+    background-color: #111;
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        padding: 20px 0;
+    }
+
+    .chp-item {
+        text-align: center;
+        width: 272px;
+    }
+}
