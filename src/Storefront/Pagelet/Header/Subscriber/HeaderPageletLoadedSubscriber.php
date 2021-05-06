@@ -9,6 +9,19 @@ use Shopware\Core\Framework\Struct\ArrayEntity;
 
 class HeaderPageletLoadedSubscriber implements EventSubscriberInterface
 {
+    /**
+     * @var SystemConfigService
+     * 
+     * $backgroundColor = $this->systemConfigService->get('SynlabPlatformConversionHeaderPro.config.backgroundColor');
+     * 
+     */
+    private $systemConfigService;
+
+    public function __construct(SystemConfigService $systemConfigService)
+    {
+        $this->systemConfigService = $systemConfigService;
+    }
+
     public static function getSubscribedEvents()
     {
         return [
@@ -26,18 +39,5 @@ class HeaderPageletLoadedSubscriber implements EventSubscriberInterface
         /*echo '<pre>';
         print_r($systemConfig);
         die();*/
-    }
-
-    /**
-     * @var SystemConfigService
-     * 
-     * $backgroundColor = $this->systemConfigService->get('SynlabPlatformConversionHeaderPro.config.backgroundColor');
-     * 
-     */
-    private $systemConfigService;
-
-    public function __construct(SystemConfigService $systemConfigService)
-    {
-        $this->systemConfigService = $systemConfigService;
     }
 }
